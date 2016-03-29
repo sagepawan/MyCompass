@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyCompass</string>
+
+    <string name="font.location.marker">&#xf041;</string>
+
+    <string name="hint.location.enter">Enter Location Name</string>
+
+    <string name="google_map_api_key">AIzaSyCNfl0WvzHDsen-J1zJrlw7K3Ir_Rjkp5U</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

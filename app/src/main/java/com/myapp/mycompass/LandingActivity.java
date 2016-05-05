@@ -5,11 +5,13 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.myapp.mycompass.Adapter.PlaceAutoCompleteAdapter;
+
 
 
 public class LandingActivity extends AppCompatActivity {
@@ -36,6 +38,11 @@ public class LandingActivity extends AppCompatActivity {
 
         btnFindInMap = (Button) findViewById(R.id.btn_find);
         btnSearchFromMap = (Button) findViewById(R.id.btn_search);
+
+        AutoCompleteTextView autocompleteView = (AutoCompleteTextView) findViewById(R.id.autocomplete);
+        //autocompleteView.setAdapter(new PlaceAutoCompleteA(getActivity(), R.layout.autocomplete_list_item));
+        autocompleteView.setAdapter(new PlaceAutoCompleteAdapter(this,R.layout.autocomplete_list_item));
+
 
         btnFindInMap.setOnClickListener(new View.OnClickListener() {
             @Override
